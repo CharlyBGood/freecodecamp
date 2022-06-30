@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: #212121;
+    font-size: 16px;
+    color: #bb8116;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.main-title {    
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 1.3em auto;
+    padding: .3em 0;
+    gap: 5em;
+}
+
+.projects-container-item {    
+    width: 15em;
+    height: 11em;
+    border-radius: .3em;
+}
+
+.projects-container-item a {
+    cursor: pointer;
+}
+
+.item-1 {
+    background-image: url('./img/tribute.png');
+}
+
+.item-2 {
+    background-image: url('./img/surveyform.png');
+}
+
+.item-3 {
+    background-image: url('./img/technicaldocumentation.png');
+}
+
+.item-4 {
+    background-image: url('./img/productlanding.png');
+}
+
+.item-5 {
+    background-image: url('./img/personalportfolio.png');
+}
+
+
+@media screen and (max-width: 850px) {
+    .main-container {
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .projects-container {
+        gap: 2em;
+    }
+    .projects-container-item {
+        width: 9em;
+        height: 7em;
+    }
+}
