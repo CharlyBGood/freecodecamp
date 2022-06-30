@@ -32,16 +32,36 @@ body {
     width: 75%;
     margin: 1.3em auto;
     padding: .3em 0;
-    gap: 5em;
+    gap: 2em;
 }
 
 .projects-container-item {    
-    width: 15em;
-    height: 11em;
+    width: 23vw;
+    height: 25vh;
     border-radius: .3em;
+    box-shadow: 3px 3px 3px #8a857f69;
+}
+
+.projects-container-item:hover {
+    box-shadow: 6px 6px 6px 6px #6d6860;
+    padding: .5em;
+    transition: 1s;
+    opacity: .4;
+}
+
+.projects-container-item:active {
+    background: #cebfbf;
 }
 
 .projects-container-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;    
+    color: #cebfbf;
+    text-shadow: 1px 1px black;
+    font-size: 1.3em;    
     cursor: pointer;
 }
 
@@ -54,11 +74,11 @@ body {
 }
 
 .item-3 {
-    background-image: url('./img/technicaldocumentation.png');
+    background-image: url('./img/productlanding.png');
 }
 
 .item-4 {
-    background-image: url('./img/productlanding.png');
+    background-image: url('./img/technicaldocumentation.png');
 }
 
 .item-5 {
@@ -68,15 +88,16 @@ body {
 
 @media screen and (max-width: 850px) {
     .main-container {
-        justify-content: space-evenly;
+        justify-content: center;
         margin: 0 auto;
+        gap: 1em;
     }
 
     .projects-container {
-        gap: 2em;
+        gap: 1.5em;
     }
     .projects-container-item {
-        width: 9em;
-        height: 7em;
+        width: 35%;
+        height: 35%;
     }
 }
