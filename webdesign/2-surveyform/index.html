@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+    <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">What kind of set to play live do you prefer?</h1>
+  <p id="description"> Tell us what's your favourite style of set.</p>
+  <form id="survey-form">
+    <div class="form_container">
+      <label id="name-label" for="name">Enter your name:</label>
+      <input type="text" name="name" id="name" placeholder="Your name..." required>
+      <label id="email-label" for="email">Enter your email:</label> 
+      <input type="email" name="email" id="email" placeholder="E-mail" required>
+      <label id="number-label" for="number">How much hours you want to rent the equipment?</label>
+      <input type="number" name="hours" id="number" min="24" max="96" placeholder="24" required>
+      
+    </div>
+    <div class="form_container-radio">
+      <input type="radio" name="Analog-Digital" id="Analog" value="Analog">
+      <label for="Analog">Analog</label>
+      <input type="radio" name="Analog-Digital" id="Digital" value="Digital">
+      <label for="Digital">Digital</label>
+    </div>
+    <div>
+      <label for="dropdown">Choose:</label>
+      <select id="dropdown" type="dropdown" class="dropbtn" class="dropdown" class="dropdown-content a">
+        <option value="drummachine">DrumMachine Style</option>
+        <option value="secuencer/synthstyle">Secuencer/Synth Style</option>
+        <option value="both">Both Mixed</option>
+      </select>
+    </div>
+    <div class="form_container-checkbox">
+      <label for="brand"> Please, select one or more of the brands that we work with:</label> <br> 
+        <ul>
+          <li><input id="brand" type="checkbox" name="brands" value="1">Arturia</li>
+          <li><input id="brand" type="checkbox" name="brands" value="2">Korg</li>
+          <li><input id="brand" type="checkbox" name="brands" value="3">Behringer</li>
+          <li><input id="brand" type="checkbox" name="brands" value="4">Roland</li>
+          <li><input id="brand" type="checkbox" name="brands" value="5">Nord</li>
+        </ul>        
+        
+        
+    </div>
+    <div class="form_container-textarea">
+      <p>Feel free to add any relevant info about your neccesities for the set you'll choose.</p>
+      <textarea placeholder="Add any comment you need..." name="comments" rows="5"></textarea>
+      <br>
+      <input id="submit" type="submit" value="Submit">
+    </div>
+  </form>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

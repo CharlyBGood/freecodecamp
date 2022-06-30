@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav id="navbar" class="navbar">
+            <header>REAPER Documentation</header>
+            <ul>
+                <li><a class="nav-link"  href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link"  href="#Licensing">Licensing</a></li>
+                <li><a class="nav-link"  href="#Customization">Customization</a></li>
+                <li><a class="nav-link"  href="#Included_software_and_plugins">Included software and plugins</a></li>
+                <li><a class="nav-link"  href="#Video_editing">Video editing</a></li>
+                <li><a class="nav-link"  href="#Control_surface_support">Control surface support</a></li>
+                <li><a class="nav-link"  href="#Coding_with_ReaScript">Coding with ReaScript</a></li>
+                <li><a class="nav-link"  href="#References">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-doc">
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>
+                    <h1>Introduction</h1>                    
+                </header>
+                <p>REAPER is a digital audio workstation and MIDI sequencer software created by Cockos. 
+                    The current version is available for Microsoft Windows (XP and newer) and macOS (10.5 and newer) – 
+                    beta versions are also available for Linux.</p> 
+                    <p>REAPER acts as a host to most industry-standard plug-in formats (such as VST and AU) 
+                    and can import all commonly-used media formats, including video. 
+                    REAPER and its included plug-ins are available in 32-bit and 64-bit format.</p>
+            </section>
+            
+            <section id="Licensing" class="main-section">
+                <header>
+                    <h1>Licensing</h1>                
+                </header>
+                <p>REAPER provides a free, fully functional 60-day evaluation period. For further use two licenses are available – 
+                    a commercial and a discounted one. They are identical in features and differ only in price and target audience, 
+                    with the discount license being offered for private use, schools and small businesses.</p> 
+                    <p>Any paid license includes the current version with all of its future updates 
+                    and a free upgrade to the next major version and all of its subsequent updates, 
+                    when they are released. Any license is valid for all configurations (x64 and x86) 
+                    and allows for multiple installations, as long it is being run on one computer at a time.</p>
+            </section>
+            
+            <section id="Customization" class="main-section">
+                <header>
+                    <h1>Customization</h1>                
+                </header>
+                <p>Extensive customization opportunities are provided through the use of ReaScript 
+                    (edit, run and debug scripts within REAPER) and user-created themes and functionality extensions.
+                    ReaScript can be used to create anything from advanced macros to full-featured REAPER extensions. 
+                    ReaScripts can be written in EEL2 (JSFX script), Lua and Python. SWS / S&M is a popular, open-source extension to REAPER, 
+                    providing workflow enhancements and advanced tempo/groove manipulation functionality.</p>
+                    <p>REAPER's interface can be customized with user-built themes. 
+                    Each previous version's default theme is included with REAPER and theming allows for complete overhauls of the GUI. 
+                    REAPER has been translated into multiple languages and downloadable language packs are available. 
+                    Users as well as developers can create language packs for REAPER.</p>
+            </section>
+            
+            <section id="Included_software_and_plugins" class="main-section">
+                <header>
+                    <h1>Included software and plugins</h1>                
+                </header>
+                <p>Reaper comes with a variety of commonly-used audio production effects. 
+                    They include tools such as ReaEQ, ReaVerb, ReaGate, ReaDelay, ReaPitch and ReaComp. 
+                    The included Rea-plug-ins are also available as a separate download for users of other DAWS, as the ReaPlugs VST FX Suite.
+                    Also included are hundreds of JSFX plug-ins ranging from standard effects to specific applications for MIDI and audio.</p> 
+                    <p>JSFX scripts are text files, which when loaded into REAPER (exactly like a VST or other plug-in) 
+                    become full-featured plug-ins ranging from simple audio effects (e.g delay, distortion, compression) 
+                    to instruments (synths, samplers) and other special purpose tools (drum triggering, surround panning). 
+                    All JSFX plug-ins are editable in any text editor and thus are fully user customizable.</p>
+                    <p>REAPER includes no third-party software, but is fully compatible with all versions of the VST standard (currently VST3) 
+                    and thus works with the vast majority of both free and commercial plug-ins available. 
+                    REAPER x64 can also run 32-bit plug-ins alongside 64-bit processes.</p>
+            </section>
+            
+            <section id="Video_editing" class="main-section">
+                <header>
+                    <h1>Video editing</h1>                
+                </header>
+                <p>While not a dedicated video editor, REAPER can be used to cut and trim video files and to edit or replace the audio within. 
+                    Common video effects such as fades, wipes and cross-fades are available.</p>
+                    <p>REAPER aligns video files in a project, as it would an audio track, 
+                    and the video part of a file can be viewed in separate video window while working on the project.</p>
+            </section>
+            
+            <section id="Control_surface_support" class="main-section">
+                <header>
+                    <h1>Control surface support</h1>                
+                </header>
+                <p>REAPER has built-in support for:</p>
+                        <ul>
+                            <li>BCF2000 – Behringer's motorized faders control surface, USB/MIDI.</li> 
+                            <li>TranzPort – Frontier Design Group's wireless transport control.</li> 
+                            <li>FaderPort – Presonus' FaderPort control surface.</li> 
+                            <li>Baby HUI – Mackie's Baby HUI control surface.</li> 
+                            <li>MCU – Mackie's "Mackie Control Universal" control surface.</li>
+                            <li>AlphaTrack – Frontier Design Group's AlphaTrack control surface.</li> 
+                        </ul>
+            </section>
+            
+            <section id="Coding_with_ReaScript" class="main-section">
+                <header>
+                    <h1>Coding with ReaScript</h1>                
+                </header>
+                <p>REAPER provides an API (advanced programming interface) for users and third parties to create extended functionality. 
+                    API functions can be called from a compiled C/C++ dynamic library that is loaded by REAPER, 
+                    or at run-time by user-created ReaScripts that can be written using REAPER's own editor.</p>
+                    <p>ReaScripts can be written in EEL, a specialized language that is also used to write JSFX and video effect processors 
+                    in REAPER; Lua, a popular scripting language; or Python, another scripting language. 
+                    EEL and Lua are embedded within REAPER and require no additional downloads or settings. 
+                    Python must be downloaded and installed separately, and enabled in REAPER preferences.</p>
+                    <b><u>Here's a couple of examples:</u></b>
+                    <b><u>REASCRIPT/EEL API</u></b>
+                        <ul>
+                            <li>For information on the EEL2 language, please see the EEL2 User Guide.</li>
+                            <li>ReaScript/EEL scripts can call API functions using functionname().</li>
+                            <li>Parameters that return information are effectively passed by reference, not value.</li>
+                        </ul>
+                        <b><u>Examples:</u></b>
+                    <pre>
+                        <code>// function returning a single (scalar) value: 
+                            sec = parse_timestr("1:12");</code>   
+                    </pre>
+                    <pre> 
+                        <code>// function returning information in the first parameter (function returns void): 
+                                    GetProjectPath(#string);</code>
+                    </pre>
+                    <pre>
+                        <code>// lower volume of track 3 by half: 
+                                            tr = GetTrack(0, 2);
+                                            GetTrackUIVolPan(tr, vol, pan);
+                                            SetMediaTrackInfo_Value(tr, "D_VOL", vol*0.5);</code>
+                    </pre>
+                    <b><u>REASCRIPT/LUA API</u></b>
+                            <ul>
+                                <li>ReaScript/Lua scripts can call API functions using reaper.functionname().</li>
+                                <li>Some functions return multiple values. In many cases, <br>some function parameters are ignored, especially when similarly named parameters are present in the returned values.</li>
+                            </ul>
+                           <b><u>Examples:</u></b>
+                    <pre>
+                        <code>-- function returning a single (scalar) value: 
+                            sec = reaper.parse_timestr("1:12")</code> 
+                    </pre>
+                    <pre>
+                        <code>-- function with an ignored (dummy) parameter: 
+                            path = reaper.GetProjectPath("")</code> 
+                    </pre>
+                    <pre>
+                        <code>-- lower volume of track 3 by half: 
+                            tr = reaper.GetTrack(0, 2)
+                            ok, vol, pan = reaper.GetTrackUIVolPan(tr, 0, 0)
+                            reaper.SetMediaTrackInfo_Value(tr, "D_VOL", vol*0.5)</code>
+                    </pre>
+            </section>
+            
+            <section id="References" class="main-section">
+                <header>
+                    <h1>References</h1>                
+                </header>
+                <p>All the info you need about REAPER is <a href="https://www.reaper.fm/" target="_blank">here</a>.</p>
+            </section>        
+        </main>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

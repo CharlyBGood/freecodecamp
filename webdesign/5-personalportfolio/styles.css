@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #020405;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: #d5d5dd;
+}
+
+.header {
+    max-height: 100vh;
+}
+
+.navbar {
+    background: #ff6f32ce;    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 3em;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;   
+}
+
+.navbar li {
+    display: inline;
+    margin: 1.5em;    
+    transition: 0.3s;    
+}
+
+.navbar li:hover {
+    box-shadow: 1px 1px #00000033;
+    border-radius: .5em;
+    
+}
+
+.navbar a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #d5d5dd;
+    text-transform: uppercase;    
+}
+
+.typewriter-div {    
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;    
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#typewriter {    
+    margin: 1em auto;    
+    font-size: 3em;
+    text-shadow: 1px 4px #f77d48ce;
+    max-width: 80%;
+}
+
+p#welcome {
+    text-align: center;
+    margin-top: 7em;
+}
+
+.project-tile img {    
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.project-tile {
+    margin: 0 auto;
+    box-shadow: 0 .5px 1px 1px #4b4f5e33;
+    transition: 0.3s;
+    border-radius: 2em;      
+}
+
+.project-tile:hover {
+    box-shadow: 0 0 11px 6px #58575733;
+    border-radius: 2em;
+}
+
+.link img {
+    width: 100%;
+    padding: .5em;
+    border-radius: 2em;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.section-container a img {    
+    padding: 1em;
+    border-radius: 2em;
+    margin: 0 auto;
+}
+
+.section-container h3 {
+    font-size: 1.5rem;
+    margin: 1em;
+    text-align: center;
+}
+
+footer {
+    margin: 3em;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        width: 100%;
+        height: 100%;
+    }
+}

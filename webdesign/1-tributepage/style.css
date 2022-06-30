@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+    background: linear-gradient(53deg,#bfa9ce,#c5e99d);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.h1-center {
+    text-align: center;
+}
+
+.container__h1 {    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #129151e8;
+    text-shadow: 3px 1px 1px #fffccc, 3px 1px 1px #fffccc;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: .6em;
+    padding: .9em;    
+}
+
+.h1-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 45%;
+    margin: .5em auto;
+}
+
+.h1-img img {
+    width: 100%;
+}
+
+figcaption {
+    background-color: black;
+    color: #fff;
+    font-style: italic;
+    padding: .5em;
+}
+
+.main_container {        
+    font-size: 16px;
+    margin: .5em auto;    
+    padding: 1em;
+    width: 85%;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.main_container img {
+    float: right; 
+    padding: .6em;
+    width: 17em; 
+}
+
+.main_container p {
+    text-align: left;
+}
+
+.p-quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.8em;
+    padding: 1em;
+    margin: .3em auto;
+    width: 75%;
+}
+
+
+ul {
+    font-size: 1em;
+    color: #af1e1e;
+    list-style-type: none;
+    margin: 1.3rem;
+    line-height: 1em;
+}
+
+li {
+    margin: .5em;
+    line-height: 17px;
+}
+
+.ul-container {    
+    margin: auto;
+    padding: 21px;        
+}
+
+.ul-container_img {
+    box-shadow: rgba(255, 255, 255, 0.555);
+    padding: 1em;
+    width: 65%;
+    float: right;
+}
+
+.last-img {
+    background-image: url("http://bit.ly/2MQpqjv");
+    width: 100%;
+    
+}
+
+footer {
+    margin: .11em auto;
+    padding: 1em;    
+    font-size: 1.3em;
+    text-align: center;
+    width: 75%;
+    line-height: 1.5em;
+}
+
+footer p {    
+    margin: 0 auto;    
+}
+
+@media screen and (min-width: 200px) {
+    img {
+        display: block;    
+        max-width: 100%;
+        height:auto;
+    }
+       
+}
