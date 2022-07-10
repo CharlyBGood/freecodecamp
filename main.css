@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,18 +52,18 @@ body {
 }
 
 .item-5 {
-    grid-column-start:3  ;
+    grid-column-start:3;
 }
 
 .projects-container-item:hover {
-    box-shadow: 6px 6px 6px 6px #6d6860;
-    padding: .5em;
-    transition: 1s;
-    opacity: .4;
+  box-shadow: 3px 3px 3px 3px #6d6860;
+  padding: 0.5em;
+  transition: 1s;
+  opacity: 0.4;
 }
 
 .projects-container-item:active {
-    background: #cebfbf;
+  background: #cebfbf;
 }
 
 .projects-container-item h3 {
