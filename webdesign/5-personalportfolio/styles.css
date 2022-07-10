@@ -79,7 +79,7 @@ p#welcome {
 }
 
 .project-tile img {    
-    max-width: 450px;
+    max-width: 25em;
     margin: 0 auto;
 }
 

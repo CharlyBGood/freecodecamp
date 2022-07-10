@@ -5,7 +5,7 @@
 body {
     width: 100%;
     height: auto;
-    background: #212121;
+    background: #000;
     font-size: 16px;
     color: #bb8116;
     margin: 0;
@@ -17,29 +17,42 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    width: 100%;
 }
 
-.main-title {    
+.main-title {
+    margin-top: 2em;
     font-size: 1.5em;
     text-align: center;
 }
 
+.main-container h2 {
+    margin: .5em;
+}
+
 .projects-container {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 75%;
-    margin: 1.3em auto;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
     padding: .3em 0;
-    gap: 2em;
+    gap: .7em;
 }
 
 .projects-container-item {    
-    width: 23vw;
-    height: 25vh;
+    /* width: 25vw;
+    height: auto; */
     border-radius: .3em;
     box-shadow: 3px 3px 3px #8a857f69;
+    margin: .3em;
+}
+
+.item-5 {
+    grid-column-start:3  ;
 }
 
 .projects-container-item:hover {
@@ -53,40 +66,27 @@ body {
     background: #cebfbf;
 }
 
+.projects-container-item h3 {
+    font-size: 1em;
+    text-align: center;
+    margin: .6em;
+}
+
 .projects-container-item a {
     display: inline-block;
     width: 100%;
-    height: 100%;
     text-decoration: none;
     text-align: center;    
     color: #cebfbf;
-    text-shadow: 1px 1px black;
-    font-size: 1.3em;    
     cursor: pointer;
 }
 
-.item-1 {
-    background-image: url('./img/tribute.png');
+.projects-container-item img {
+    border-radius: .3em;
+    width: 100%;
 }
 
-.item-2 {
-    background-image: url('./img/surveyform.png');
-}
-
-.item-3 {
-    background-image: url('./img/productlanding.png');
-}
-
-.item-4 {
-    background-image: url('./img/technicaldocumentation.png');
-}
-
-.item-5 {
-    background-image: url('./img/personalportfolio.png');
-}
-
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
     .main-container {
         justify-content: center;
         margin: 0 auto;
@@ -96,8 +96,7 @@ body {
     .projects-container {
         gap: 1.5em;
     }
-    .projects-container-item {
+    /* .projects-container-item {
         width: 35%;
-        height: 35%;
-    }
+    } */
 }
