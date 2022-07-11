@@ -17,16 +17,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 85%;
+    height: 100vh;
+    margin: 1em auto;
 }
 
 .main-title {
-    margin-top: 2em;
-    font-size: 1.5em;
+    /* margin-top: 2em auto; */
+    font-size: 1.3em;
     text-align: center;
 }
 
 .main-container h2 {
+    font-size: 1em;
     margin: .5em;
 }
 
@@ -37,8 +40,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
     justify-content: center;
+    align-items: center;
     width: 85%;
-    margin: 0 auto;
+    margin: 3em auto;
     padding: .3em 0;
     gap: .7em;
 }
@@ -47,8 +51,8 @@ body {
     /* width: 25vw;
     height: auto; */
     border-radius: .3em;
-    box-shadow: 3px 3px 3px #8a857f69;
-    margin: .3em;
+    box-shadow: 3px 3px 3px #ff9c262e;
+    margin: .3em auto;
 }
 
 .item-5 {
@@ -56,7 +60,7 @@ body {
 }
 
 .projects-container-item:hover {
-  box-shadow: 3px 3px 3px 3px #6d6860;
+  box-shadow: 3px 3px 3px 3px #ff9c262e;
   padding: 0.5em;
   transition: 1s;
   opacity: 0.4;
@@ -67,9 +71,10 @@ body {
 }
 
 .projects-container-item h3 {
-    font-size: 1em;
+    font-size: 1.3vw;
     text-align: center;
-    margin: .6em;
+    width: 100%;
+    /* margin: .6em; */
 }
 
 .projects-container-item a {
