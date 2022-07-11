@@ -19,7 +19,7 @@ body {
     justify-content: space-around;
     width: 85%;
     height: 100vh;
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
 .main-title {
@@ -71,18 +71,16 @@ body {
 }
 
 .projects-container-item h3 {
-    font-size: 1.3vw;
+    font-size: .7em;
     text-align: center;
     width: 100%;
-    /* margin: .6em; */
 }
 
 .projects-container-item a {
     display: inline-block;
     width: 100%;
     text-decoration: none;
-    text-align: center;    
-    color: #cebfbf;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -98,10 +96,4 @@ body {
         gap: 1em;
     }
 
-    .projects-container {
-        gap: 1.5em;
-    }
-    /* .projects-container-item {
-        width: 35%;
-    } */
 }
