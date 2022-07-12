@@ -121,11 +121,24 @@ footer {
     opacity: .8;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .main-container {
         justify-content: center;
-        margin: 0 auto;
-        gap: 1em;
+        gap: .3em;
+        width: 100%;        
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+
+    .projects-container-item {
+        width: 35%;
+        height: auto;
+        font-size: 3vw;
     }
 
 }
