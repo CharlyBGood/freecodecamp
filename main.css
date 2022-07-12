@@ -13,10 +13,15 @@
   box-sizing: border-box;
 }
 
+html {
+    background-color: #000;
+}
+
 body {
+    /* background: url('../img/code3.gif') no-repeat center center;
+    background-size: cover; */
     width: 100%;
-    height: auto;
-    background: #000;
+    height: 100vh;    
     font-size: 16px;
     color: var(--col-grn);
     margin: 0;
@@ -24,30 +29,28 @@ body {
 }
 
 .main-container {
+    background: url('../img/code3.gif') no-repeat center center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 85%;
-    height: 100vh;
-    margin: 0 auto;
+    height: auto;
+    margin: .7em auto;    
 }
 
 .main-title {
-    /* margin-top: 2em auto; */
+    background-color: var(--col-rd);
+    padding: .6em;
+    opacity: .8;
     font-size: 1.3em;
     text-align: center;
-}
-
-.main-container h2 {
-    font-size: 1em;
-    margin: .5em;
+    width: 100%;
+    margin: 0;
 }
 
 .projects-container {
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
     justify-content: center;
@@ -58,9 +61,7 @@ body {
     gap: .7em;
 }
 
-.projects-container-item {    
-    /* width: 25vw;
-    height: auto; */
+.projects-container-item {
     border-radius: .3em;
     box-shadow: 3px 3px 3px #ff9c262e;
     margin: .3em auto;
@@ -82,7 +83,11 @@ body {
 }
 
 .projects-container-item h3 {
-    font-size: .7em;
+    background-color: var(--col-rd);
+    padding: .3em;
+    opacity: .8;
+    margin: .1em;
+    font-size: 1em;
     text-align: center;
     width: 100%;
 }
@@ -98,6 +103,22 @@ body {
 .projects-container-item img {
     border-radius: .3em;
     width: 100%;
+}
+
+footer h2 {    
+    font-size: 1.1em;    
+    padding: .4em;
+    margin: .3em;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    background-color: var(--col-rd);
+    opacity: .8;
 }
 
 @media screen and (max-width: 650px) {
