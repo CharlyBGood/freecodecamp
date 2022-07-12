@@ -29,7 +29,7 @@ body {
 }
 
 .main-container {
-    background: url('../img/code3.gif') no-repeat center center;
+    background: url('./img/code3.gif') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
