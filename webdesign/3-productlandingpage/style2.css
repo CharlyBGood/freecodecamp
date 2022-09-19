@@ -15,7 +15,9 @@
 }
 
 body {
-    font-size: var(--fs-400);
+    width: 100%;
+    height: auto;
+    font-size: 15px;
     font-family: 'Nanum Gothic', sans-serif;
     color: var(--col-whr);    
     background-color: #000;    
@@ -23,10 +25,6 @@ body {
 
 .header {
     height: 100vh;    
-    /* background-image: url('https://github.com/CharlyBGood/hello-word/blob/master/vlcsnap-2020-03-03-14h25m52s774.png?raw=true');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; */
     max-width: 100%;
 }
 
@@ -122,13 +120,14 @@ h1, h2, p, label {
 }
 
 .contact {
-    width: 80%;
-    margin: 5rem auto;     
-    
-    padding: 1em;
+    width: 100%;
+    margin: 5rem auto;    
+    /* padding: 1em; */
 }
 
-.contact form, p {
+.contact form, .contact p {
+    width: 75%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,11 +164,14 @@ input[type="text"]:focus, [type="email"]:focus {
     border: 1px solid #501f50;
 }
 
-footer {    
+footer {
+    width: 100%;
     margin-top: 2.3em;
     background-color: #99103d;
-    opacity: .5;
-    padding: .5em;      
+    opacity: .98;
+    padding: .5em;
+    position: fixed;
+    bottom: 0;
 }
 
 .smedia {
