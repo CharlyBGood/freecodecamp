@@ -40,14 +40,13 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   color: var(--col-wgr);
   background-color: #05180e;
-  background-image: url("./img/bgrflowers.jpg");
-  background-size: contain;
-  background-repeat: repeat;
+  background-image: url("./img/bgrflowers.jpg");  
 }
 
 .header {  
   max-width: 100%;
   height: 100vh;
+  opacity: .94;
 }
 
 .topnav {
@@ -119,20 +118,25 @@ a.navbar_toggle span.arrow-down {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2.2em;
   align-items: center;
   padding-top: 3em;
   margin: 0 auto;
   width: 100%;
   height: 100vh;
   background-color: var(--col-grn);
-  opacity: .98;
+  
+}
+
+h1 {
+  font-size: 1em;
 }
 
 h1,
 h2,
 p {
-  font-size: 1em;
+  /* font-size: 1em; */
   text-align: center;
   line-height: 1.4rem;
   padding: 0.5em;
@@ -146,7 +150,7 @@ p {
 
 .logo {
   border-radius: 0.6em;
-  width: 35vw;
+  width: 28vw
 }
 
 .section_one {
@@ -157,7 +161,9 @@ p {
   margin: 0 auto;
   height: 100vh;
   background-color: var(--col-grn);
-  opacity: .98;
+  opacity: .94;
+  position: relative;
+  z-index: -1;
 }
 
 .section_one img {
@@ -184,7 +190,9 @@ p {
   display: flex;
   flex-direction: column;
   background-color: var(--col-grn);
-  opacity: .98;
+  opacity: .94;
+  position: relative;
+  z-index: -1;
 }
 
 .section p {
@@ -197,7 +205,7 @@ p {
   margin: 0 auto;
   width: 100%;
   background-color: var(--col-grn);
-  opacity: .98;  
+  opacity: .94;  
 }
 
 .contact form {
@@ -212,9 +220,9 @@ p {
 .contact input[type="text"],
 [type="email"],
 textarea {
-  background: var(--col-wgr);
+  background: var(--col-grn);
   outline: none;
-  border: none;
+  border: 1px solid var(--col-wgr);
   border-radius: 0.4em;
   padding: 0.5em;
   margin: 0.5em;
@@ -230,6 +238,9 @@ input[type="submit"] {
   border-radius: 0.4em;
   margin: 0.5em;
   height: 3em;
+  background-color: var(--col-grn);
+  color: var(--col-wgr);
+  border: 1px solid var(--col-wgr);
 }
 
 input[type="submit"]:hover {
@@ -251,6 +262,7 @@ input[type="text"]:focus,
   justify-content: space-between;
   align-items: center;
   padding: 0.5em;
+  border: 1px dashed var(--col-wgr);
   color: var(--col-wgr);
 }
 
@@ -284,7 +296,12 @@ input[type="text"]:focus,
   /* border: 1px solid #bebcbc; */
   color: var(--col-wgr);
   padding: 1em;
-  cursor: pointer;
+  cursor: pointer;    
+  transition: .5s linear;
+}
+
+.action_two button:active {
+  box-shadow: 2px 2px 2px var(--col-wgr);  
 }
 
 footer {
@@ -304,15 +321,10 @@ footer {
   padding: 0.3em;
 }
 
-.smedia a {
-  font-size: var(--fs-500);
+.smedia a {  
   padding: 0 0.8em;
   text-decoration: none;
   color: var(--col-wgr);
-}
-
-.smedia p {
-  font-size: 0.9em;
 }
 
 .topnav a.humb {
@@ -321,7 +333,15 @@ footer {
 
 @media screen and (max-width: 858px) {
   .header .container {    
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 0;    
+    gap: 1em;
+  }
+
+  .container p, .action_one p {
+    padding: .5em 2em;
+    margin: 1em 0;
+    font-size: .8em;
   }
 
   .topnav a {
@@ -370,11 +390,11 @@ footer {
     display: inline-block;
   }
 
-  .logo {
-    width: 65vw;
+  .logo, .section_one img {
+    width: 75%;
   }
 
-  .smedia p {
+  p {
     font-size: 0.8em;
   }
 
@@ -388,6 +408,12 @@ footer {
 
   .call_action {
     flex-direction: column;
+    padding-bottom: 2em;
+  }
+
+  .action_one h2 {
+    padding: 0 1em;
+    font-size: .9em;
   }
 
   .action {

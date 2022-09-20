@@ -5,7 +5,9 @@ let links = document.querySelectorAll(".nav-link");
 links.forEach((link) =>
   link.addEventListener("click", () => {
     navbar.classList.remove("responsive");
-    toggleBtn.style.display = "flex";
+    if (navbar.classList.contains("responsive")) {
+      toggleBtn.style.display = "flex";
+    }
   })
 );
 
