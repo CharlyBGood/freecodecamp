@@ -386,8 +386,8 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 480px){
-  body{
+@media screen and (max-device-width: 480px) {
+  body {
     -webkit-text-size-adjust: none;
   }
 }
