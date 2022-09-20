@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Charly BGood Mundo</title>
   </head>
   <body>
@@ -13,52 +19,49 @@
       <nav class="topnav" id="nav-bar">
         <a class="nav-link" href="#Home">Home</a>
         <a class="nav-link" href="#Video">Natural Care</a>
-        <a class="nav-link" href="#Video">Perfumes</a>
+        <a class="nav-link" href="#Perfumes">Perfumes</a>
         <a class="nav-link" href="#Contact">Contact</a>
         <a href="javascript:void(0);" class="humb" onclick="myHumb()"
           ><i class="fa fa-bars"></i
         ></a>
       </nav>
-      <div id="Home" class="container">        
-          <h1>Hi, and welcome...</h1>
-          <p>
-            We offer a different way to treat your body.
-          </p>
-          <p>
-            with no artificial ingredients.
-          </p>
-          <p>
-            Everything you need comes from mother nature.
-          </p>
-          <img
-            class="logo"
-            id="header-img"
-            src="/img/oilnatural.jpg"
-            alt="Charly BGood Logo"
-          />        
+      <div id="Home" class="container">
+        <h1>Hi, and welcome...</h1>
+        <p>We offer a different way to treat your body.</p>
+        <p>with no artificial ingredients.</p>
+        <p>Everything you need comes from mother nature.</p>
+        <img
+          class="logo"
+          id="header-img"
+          src="/img/oilnatural.jpg"
+          alt="Charly BGood Logo"
+        />
       </div>
     </header>
-    <main>
-      <div id="Video" class="container">
-        <h2>Natural Care</h2>
-        <p>
-          You can see one of our videos to learn more about natural cosmetics and skin care.
-        </p>
-        <div class="video">
-          <iframe id="video" src="https://www.youtube.com/embed/VftruorG9ZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    <div id="Video" class="section">
+      <h2>Natural Care</h2>
+      <p>
+        You can see one of our videos to learn more about natural cosmetics and
+        skin care.
+      </p>
+      <div class="video">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/VftruorG9ZQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      </div>      
-    </main>
-    <div id="Contact" class="contact">
+    </div>
+    <div id="Contact" class="contact">      
       <form
         method="POST"
         id="form"
         action="https://www.freecodecamp.com/email-submit"
       >
-        <label for="coment">
-          Contact us
-        </label>
+        <label for="coment"> Contact us </label>
         <textarea
           name="coment"
           id="coment"
@@ -95,16 +98,28 @@
         <input type="hidden" name="hideMe" />
         <input type="submit" name="Submit" id="submit" value="Submit" />
       </form>
+      <div class="call_action">
+        <div class="action_one">
+            <h2>Call to action! It's time!!</h2>
+            <p>Please. click that button to sign up!</p>
+        </div>
+        <div class="action_two">
+            <button>Sign up</button>
+        </div>            
+      </div>
     </div>
     <footer>
       <div class="smedia">
         <p>Find us on social media</p>
-        <a href="https://www.youtube.com/watch?v=VftruorG9ZQ&feature=emb_title" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=VftruorG9ZQ&feature=emb_title"
+          target="_blank"
+        >
           <i class="fab fa-youtube"></i>
-        </a>        
+        </a>
         <a href="https://www.instagram.com/vergeldevenus/" target="_blank">
           <i class="fab fa-instagram"></i>
-        </a>        
+        </a>
       </div>
     </footer>
 
@@ -113,6 +128,6 @@
       src="https://kit.fontawesome.com/a9d601c6bd.js"
       crossorigin="anonymous"
     ></script> -->
-    <script src="main.js"></script>    
+    <script src="main.js"></script>
   </body>
 </html>
