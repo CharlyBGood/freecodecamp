@@ -4,105 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Charly BGood Mundo</title>
   </head>
   <body>
     <header id="header" class="header">
       <nav class="topnav" id="nav-bar">
         <a class="nav-link" href="#Home">Home</a>
-        <a class="nav-link" href="#Songs">Songs</a>
-        <a class="nav-link" href="#Instrumentals">Instrumentals</a>
-        <a class="nav-link" href="#Abstract">Abstract</a>
+        <a class="nav-link" href="#Video">Natural Care</a>
+        <a class="nav-link" href="#Video">Perfumes</a>
         <a class="nav-link" href="#Contact">Contact</a>
         <a href="javascript:void(0);" class="humb" onclick="myHumb()"
           ><i class="fa fa-bars"></i
         ></a>
       </nav>
-
-      <div class="container">
-        <div id="Home" class="container_welcome">
+      <div id="Home" class="container">        
           <h1>Hi, and welcome...</h1>
           <p>
-            I'm Charly BGood, here you can find my music, i'm open to
-            colaborations for your films, company videos + more...
+            We offer a different way to treat your body.
           </p>
-        </div>
-        <div class="logo_container">
+          <p>
+            with no artificial ingredients.
+          </p>
+          <p>
+            Everything you need comes from mother nature.
+          </p>
           <img
             class="logo"
             id="header-img"
-            src="/img/charlybgoodlogo.jpg"
+            src="/img/oilnatural.jpg"
             alt="Charly BGood Logo"
-          />
-        </div>
+          />        
       </div>
     </header>
     <main>
-      <div id="Songs" class="container">
-        <h2>Songs</h2>
+      <div id="Video" class="container">
+        <h2>Natural Care</h2>
         <p>
-          You can add some special and expressive feelings to your videos by
-          asking for the songs that already exists or you can ask for new songs,
-          composed specially for your film.
+          You can see one of our videos to learn more about natural cosmetics and skin care.
         </p>
         <div class="video">
-          <iframe
-            id="video"
-            src="https://www.youtube-nocookie.com/embed/nOyMXlcf-7U"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <iframe id="video" src="https://www.youtube.com/embed/VftruorG9ZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <div id="Instrumentals" class="container">
-        <h2>Instrumentals</h2>
-        <p>
-          There's several ways to say something without using a single word, so,
-          <br />there's a lot of styles on the instrumental music catalog that
-          you can ask for, <br />or maybe you want to ask for some specific
-          sensations to be made for your film.
-        </p>
-        <div class="video">
-          <iframe
-            class="video_iframe"
-            src="https://www.youtube.com/embed/fcVyZrJLfcA"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div id="Abstract" class="container">
-        <h2>Abstract</h2>
-        <p>
-          Or maybe you just need incidental music, bizarre noises and sounds to
-          add some more dramatic reactions by the audience.
-        </p>
-        <div class="video">
-          <iframe
-            class="video_iframe"
-            src="https://player.vimeo.com/video/27035187"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
+      </div>      
     </main>
-
     <div id="Contact" class="contact">
       <form
         method="POST"
         id="form"
         action="https://www.freecodecamp.com/email-submit"
       >
-        <label for="coment"
-          >Contact me for more info, or if you want to work on some
-          project...</label
-        >
+        <label for="coment">
+          Contact us
+        </label>
         <textarea
           name="coment"
           id="coment"
@@ -137,34 +93,26 @@
           required
         />
         <input type="hidden" name="hideMe" />
-        <input type="submit" name="Submit" id="submit" />
+        <input type="submit" name="Submit" id="submit" value="Submit" />
       </form>
     </div>
     <footer>
       <div class="smedia">
-        <a href="https://bit.ly/BGoodYouTube" target="_blank">
+        <p>Find us on social media</p>
+        <a href="https://www.youtube.com/watch?v=VftruorG9ZQ&feature=emb_title" target="_blank">
           <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://vimeo.com/charlybgood" target="_blank">
-          <i class="fab fa-vimeo-v"></i>
-        </a>
-        <a href="https://www.instagram.com/charlsbgood/" target="_blank">
+        </a>        
+        <a href="https://www.instagram.com/vergeldevenus/" target="_blank">
           <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/CharlybGoodM" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/charlybgoodm" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
+        </a>        
       </div>
     </footer>
 
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-    <script
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script
       src="https://kit.fontawesome.com/a9d601c6bd.js"
       crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
+    ></script> -->
+    <script src="main.js"></script>    
   </body>
 </html>
