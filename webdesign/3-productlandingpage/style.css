@@ -40,13 +40,13 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   color: var(--col-wgr);
   background-color: #05180e;
-  background-image: url("./img/bgrflowers.jpg");  
+  background-image: url("./img/bgrflowers.jpg");
 }
 
-.header {  
+.header {
   max-width: 100%;
-  height: 100vh;
-  opacity: .94;
+  /* height: 100vh; */
+  opacity: 0.94;
 }
 
 .topnav {
@@ -54,10 +54,11 @@ body {
   justify-content: space-around;
   background: var(--col-grn);
   position: fixed;
+  top: 0;
   width: 100%;
-  opacity: .98;
+  opacity: 0.98;
   z-index: 1;
-  padding: .3em 0;
+  padding: 0.3em 0;
 }
 
 .topnav a {
@@ -98,7 +99,7 @@ a.navbar_toggle {
   width: 15%;
   height: 1.4em;
   text-decoration: none;
-  user-select: none;  
+  user-select: none;
 }
 
 a.navbar_toggle:hover {
@@ -107,12 +108,14 @@ a.navbar_toggle:hover {
 
 a.navbar_toggle span.arrow-down {
   width: 100%;
-  font-size: 4em;
-  padding: 0.2em 0;
-  text-align: center;  
-  opacity: .98;
-  color: #1e5236;
-  border-radius: 3em;
+  font-size: 3em;
+  padding: 0.1em 0;
+  text-align: center;
+  opacity: 0.98;
+  color: var(--col-wgr);
+  border-radius: 0.5em;
+  background-color: var(--col-grn);
+  opacity: 0.94;
 }
 
 .container {
@@ -126,16 +129,16 @@ a.navbar_toggle span.arrow-down {
   width: 100%;
   height: 100vh;
   background-color: var(--col-grn);
-  
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 1em;
 }
 
 h1,
 h2,
-p {  
+p {
   text-align: center;
   line-height: 1.4rem;
   padding: 0.5em;
@@ -144,12 +147,12 @@ p {
 }
 
 p {
-  font-size: .82em;
+  font-size: 0.82em;
 }
 
 .logo {
   border-radius: 0.6em;
-  width: 28vw
+  width: 28vw;
 }
 
 .section_one {
@@ -160,7 +163,7 @@ p {
   margin: 0 auto;
   height: 100vh;
   background-color: var(--col-grn);
-  opacity: .94;
+  opacity: 0.94;
   position: relative;
   z-index: -1;
 }
@@ -189,7 +192,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: var(--col-grn);
-  opacity: .94;
+  opacity: 0.94;
   position: relative;
   z-index: -1;
 }
@@ -204,15 +207,15 @@ p {
   margin: 0 auto;
   width: 100%;
   background-color: var(--col-grn);
-  opacity: .94;
-  position: relative;
-  z-index: -1;
+  opacity: 0.94;
+  /* position: relative; */
+  /* z-index: -1; */
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
-  width: 40%;  
+  width: 40%;
   /* padding: 2em; */
   /* margin: 0 auto;
   margin-bottom: 3em; */
@@ -297,12 +300,12 @@ input[type="text"]:focus,
   /* border: 1px solid #bebcbc; */
   color: var(--col-wgr);
   padding: 1em;
-  cursor: pointer;    
-  transition: .5s linear;
+  cursor: pointer;
+  transition: 0.5s linear;
 }
 
 .action_two button:active {
-  box-shadow: 2px 2px 2px var(--col-wgr);  
+  box-shadow: 2px 2px 2px var(--col-wgr);
 }
 
 footer {
@@ -317,32 +320,29 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-weight: bold;
   padding: 0.3em;
 }
 
-.smedia a {  
-  padding: 0 0.8em;
+.smedia a {
+  font-size: 1.4em;
   text-decoration: none;
   color: var(--col-wgr);
 }
 
-.topnav a.humb {
-  display: none;
-}
-
 @media screen and (max-width: 858px) {
-  .header .container {    
+  .header .container {
     justify-content: center;
-    padding: 0;    
+    padding: 0;
     gap: 0;
   }
 
-  .container p, .action_one p {
-    padding: .5em 2em;
-    margin: .3em 0;
-    font-size: .8em;
+  .container p,
+  .action_one p {
+    padding: 0.5em 2em;
+    margin: 0.3em 0;
+    font-size: 0.8em;
   }
 
   .topnav a {
@@ -362,6 +362,7 @@ footer {
   }
 
   .topnav.responsive {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -370,6 +371,8 @@ footer {
 
   .topnav.responsive a.nav-link {
     width: 100%;
+    margin-top: 3em;
+    border-bottom: 1px solid var(--col-wgr);
   }
 
   a.navbar_toggle {
@@ -378,20 +381,12 @@ footer {
     display: flex;
   }
 
-  .topnav.responsive .humb {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 0;
-    padding: 0.5em;
-    color: var(--col-whr);
-    width: 6%;
-  }
-
   .topnav.responsive a {
     display: inline-block;
   }
 
-  .logo, .section_one img {
+  .logo,
+  .section_one img {
     width: 75%;
   }
 
@@ -414,7 +409,7 @@ footer {
 
   .action_one h2 {
     padding: 0 1em;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .action {

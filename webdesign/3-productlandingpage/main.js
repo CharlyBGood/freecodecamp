@@ -4,14 +4,14 @@ let links = document.querySelectorAll(".nav-link");
 
 links.forEach((link) =>
   link.addEventListener("click", () => {    
-    toggleBtn.style.display = "flex";
-    navbar.classList.remove("responsive")    
+    // toggleBtn.style.display = "flex";
+    navbar.classList.remove("responsive")
   })
 );
 
 toggleBtn.addEventListener("click", () => {
   navbar.className += " responsive";
-  toggleBtn.style.display = "none";
+  toggleBtn.style.position = "relative";
 });
 
 let call = document.getElementById("call");
