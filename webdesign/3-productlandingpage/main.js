@@ -3,11 +3,9 @@ let navbar = document.getElementById("nav-bar");
 let links = document.querySelectorAll(".nav-link");
 
 links.forEach((link) =>
-  link.addEventListener("click", () => {
-    navbar.classList.remove("responsive");
-    if (navbar.classList.contains("responsive")) {
-      toggleBtn.style.display = "flex";
-    }
+  link.addEventListener("click", () => {    
+    toggleBtn.style.display = "flex";
+    navbar.classList.remove("responsive")    
   })
 );
 
